@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+    .bordered_image{
+        border: none;
+    }
+
+    input[type=checkbox] {
+       transform: scale(1.5);
+    }
+
+    #answer{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .image_name{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col-md-7">
+                <div id="image_display">
+                    <div class="content" id="image_display_area">
+                        <img src="assets/white.png" class="bordered_image">
+                    </div>
+                    <div class="container" id="image_list_area">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div id="answer"></div>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" id="alphabet_checkboxes_all" value="all"> All
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input alphabet_checkboxes" value="1"> _
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="2">k_g
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="3">s_z
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="4">t_d
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="5">n
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="6">h-b-p
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="7">m
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="8">r
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="9">y
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="10">w
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input alphabet_checkboxes" value="11">u
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="content">
+                            <h4>List<h4>
+                            <button id="list_button" class="btn btn-primary">List</button>
+                        </div>
+                        <div class="content">
+                            <h4>Image<h4>
+                            <button id="suffle_button" class="btn btn-info">Suffle</button>
+                            <button id="answer_button" class="btn btn-success">Answer</button>
+                        </div>
+                        <div class="content">
+                            <h4>Text</h4>
+                            <button id="suffle_text_button" class="btn btn-info">Suffle</button>
+                            <button id="answer_text_button" class="btn btn-success">Answer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/checkboxes.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/image.js"></script>
+<script src="js/text.js"></script>
